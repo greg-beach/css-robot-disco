@@ -5,37 +5,176 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  width: 750px;
+  height: 750px;
+  margin: 400px auto;
 }
 
 .robot-face-shape {
+  width: 750px;
+  height: 750px;
+  border-radius: 50px;
+  margin: auto auto;
+  border-style: solid;
+  border-color: rgb(146, 103, 228, 0.5);
+  border-width: 25px;
+  position: relative;
 }
 
-.robot-eye-left {
+robot-eye-left {
+  position: static;
+}
+
+#star-five {
+  margin: 100px 125px;
+  position: relative;
+  display: block;
+  color: rgba(9, 204, 26, 0.5);
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgba(9, 204, 26);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+#star-five:before {
+  border-bottom: 80px solid rgba(9, 204, 26);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: rgba(9, 204, 26);
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid rgba(9, 204, 26);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
 }
 
 .robot-eye-right {
+  position: static;
+  background-image: url("https://picsum.photos/id/431/225/150");
+  background-repeat: no-repeat;
+  background-position: left -10px bottom -15px;
+  margin: -215px 450px;
+}
+
+#magnifying-glass {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.8em;
+  box-sizing: content-box;
+  height: 0.8em;
+  border: 0.1em solid LightGray;
+  position: absolute;
+  border-radius: 0.7em;
+}
+#magnifying-glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.5em;
+  bottom: -0.2em;
+  border-width: 0;
+  background: LightGray;
+  width: 0.7em;
+  height: 0.16em;
+  transform: rotate(45deg);
 }
 
 .robot-ear-left {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid tomato;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -150px;
+  margin-top: -600px;
+  transform: rotate(-90deg);
 }
 
 .robot-ear-right {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid violet;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 815px;
+  margin-top: -600px;
+  transform: rotate(90deg);
 }
 
 .robot-nose {
-}
-
-.robot-nose:before {
-}
-
-.robot-nose:after {
+  width: 20%;
+  height: 5%;
+  background-image: linear-gradient(to right, #ffe000, #799f0c);
+  border-radius: 100px / 50px;
+  position: static;
+  margin: 150px auto;
 }
 
 .robot-teeth {
+  width: 300px;
+  height: 150px;
+  position: static;
+  margin: -50px auto;
+  border-radius: 15px;
+  background-image: linear-gradient(transparent, red, transparent);
 }
 
 .robot-tooth {
+  width: 48px;
+  height: 45px;
+  background: white;
+  border: solid;
+  border-color: black;
+  border-width: thin;
+  position: relative;
+  margin-top: 7%;
+  float: left;
 }
 
 .robot-hair-style {
+  position: absolute;
+  margin: -925px auto;
+}
+
+.robot-hair-one {
+  width: 100px;
+  height: 100px;
+  background: rgb(212, 0, 255);
+  float: left;
+}
+
+.robot-hair-two {
+  width: 100px;
+  height: 100px;
+  background: rgb(212, 0, 255);
+  float: left;
+}
+
+.robot-hair-three {
+  width: 350px;
+  height: 250px;
+  background: rgb(212, 0, 255);
+  float: left;
+  margin-top: -150px;
 }
